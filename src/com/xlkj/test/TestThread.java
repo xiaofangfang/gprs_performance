@@ -4,19 +4,16 @@
  * and open the template in the editor.
  */
 
-package com.xlkj.main;
+package com.xlkj.test;
+
+import org.apache.log4j.Logger;  
 
 /**
  *
  * @author Administrator
  */
-public class Xlkj_gprs_caiji {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class TestThread extends Thread{
+    
+   
     
 }

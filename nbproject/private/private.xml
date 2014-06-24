@@ -2,6 +2,24 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/main/MainFrame.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/MySQLUtil.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/FilUtil.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/service/SQLServer.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/gprs.sql</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/ValuePasrseUtl.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/thread/MyThread.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/thread/MyTask.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/thread/CommThread.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/Util.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/devices.properties</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/thread/FileTask.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/util/ConfigUtil.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/service/MainServer.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/main/TextAreaLogAppender.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/com/xlkj/thread/LogAppender.java</file>
+            <file>file:/G:/comm_test/xlkj_gprs_caiji/src/log4j.properties</file>
+        </group>
     </open-files>
 </project-private>

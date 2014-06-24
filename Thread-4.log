@@ -1,0 +1,4 @@
+17   WARN  [2014-06-16 14:34:14,699] com.xlkj.test.ThreadBody.run(TestLog.java:44)Thread-4: Thread-4 started!
+18   WARN  [2014-06-16 14:34:14,700] com.xlkj.test.ThreadBody.run(TestLog.java:48)Thread-4: this is warn
+18   ERROR [2014-06-16 14:34:14,700] com.xlkj.test.ThreadBody.run(TestLog.java:49)Thread-4: this is error
+18   WARN  [2014-06-16 14:34:14,700] com.xlkj.test.ThreadBody.run(TestLog.java:51)Thread-4: Thread-4 finished!

@@ -153,7 +153,15 @@ System.out.print(hex.toUpperCase() + " ");
 } 
 System.out.println(""); 
 } 
-
+public static String hex2Hex(String hex){
+    String str="";
+    for(int i=0;i<hex.length()/2;i++)
+    {
+        str=str+hex.substring(i*2, i*2+2)+" ";
+    }
+    
+    return str.toUpperCase();
+}
 /** 
 * 
 * @param b byte[] 
@@ -214,15 +222,6 @@ ret[i] = uniteBytes(tmp[i*2], tmp[i*2+1]);
 return ret; 
 } 
 
-public static void main(String ars[]){
-    SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd HH点mm至");
-    SimpleDateFormat format2 = new SimpleDateFormat("HH点mm");
-    Date d=new Date();
-    String str1=format1.format(d);
-    d.setHours(d.getHours()+9);
-    String str=format2.format(d);
-    System.out.println(str1+str);
-   // printHexString("05 01 00 00 00 06 BD 8C",HexString2Bytes("050100000006BD8C"));
-}
+
 
 }

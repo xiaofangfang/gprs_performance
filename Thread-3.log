@@ -1,0 +1,4 @@
+20   WARN  [2014-06-16 14:34:14,702] com.xlkj.test.ThreadBody.run(TestLog.java:44)Thread-3: Thread-3 started!
+20   WARN  [2014-06-16 14:34:14,702] com.xlkj.test.ThreadBody.run(TestLog.java:48)Thread-3: this is warn
+21   ERROR [2014-06-16 14:34:14,703] com.xlkj.test.ThreadBody.run(TestLog.java:49)Thread-3: this is error
+21   WARN  [2014-06-16 14:34:14,703] com.xlkj.test.ThreadBody.run(TestLog.java:51)Thread-3: Thread-3 finished!

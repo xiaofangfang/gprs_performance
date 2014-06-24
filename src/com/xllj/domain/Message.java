@@ -12,6 +12,9 @@ package com.xllj.domain;
  */
 public class Message {
 
+    public Message() {
+    }
+
     public Message(String hex, long addtime) {
         this.hex = hex;
         this.addtime = addtime;

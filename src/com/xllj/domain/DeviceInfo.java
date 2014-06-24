@@ -7,13 +7,13 @@
 package com.xllj.domain;
 
 import java.util.Objects;
-
+import java.io.Serializable;
 /**
  *
  * @author yuhaifang
  * 
  */
-public class DeviceInfo {
+public class DeviceInfo implements Serializable{
 
     @Override
     public String toString() {
@@ -85,5 +85,14 @@ public class DeviceInfo {
        private  String send_message;
       private  String protecol;
        private int collection_frq;
+       private int device_style;
+
+    public int getDevice_style() {
+        return device_style;
+    }
+
+    public void setDevice_style(int device_style) {
+        this.device_style = device_style;
+    }
        
 }

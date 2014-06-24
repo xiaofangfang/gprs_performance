@@ -1,0 +1,3 @@
+0    WARN  [2014-06-16 14:34:14,682] com.xlkj.test.TestLog.main(TestLog.java:18)main: class com.xlkj.test.TestLog started!
+13   WARN  [2014-06-16 14:34:14,695] com.xlkj.test.TestLog.main(TestLog.java:27)main: this is warn
+15   ERROR [2014-06-16 14:34:14,697] com.xlkj.test.TestLog.main(TestLog.java:28)main: this is error

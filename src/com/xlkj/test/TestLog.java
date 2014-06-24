@@ -1,28 +1,61 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package com.xlkj.test;
-import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;  
 
-/**
- *
- * @author Administrator
- */
-public class TestLog {
-    private static Logger logger = Logger.getLogger(TestLog.class);
-    private static Logger comm1 = Logger.getLogger("thread1");
-    private static Logger comm2 = Logger.getLogger("thread2");
-    public static void main(String[] args) {  
-
-        System.out.println("hello world");  // 记录debug级别的信息          
-        logger.debug("This is debug message.");           // 记录info级别的信息          
-        logger.info("This is info message.");           // 记录error级别的信息          
-        logger.error("This is error message.");
-        comm1.error("hello");
-        comm1.info("comm1 begin to log");
-        comm2.info("comm2 begin to log");
-    }
-}
+  
+  
+public class TestLog  
+{  
+    // 这是主线程的Logger，这些不需独立日志的类也可以创建为普通的Logger，通过配置文件配置参数  
+    static Logger logger = Logger.getLogger("xio");
+  
+    public TestLog() {}  
+  
+      
+    public static void main(String[] args)  
+    {  
+       // logger.warn(TestLog.class + " started!");  
+          
+        ThreadBody threadBody = new ThreadBody();  
+        for(int i=0; i<5; ++i) {  
+            new Thread(threadBody).start();  
+            Thread t=new TestThread();
+        new Thread(t).start();
+        }  
+        
+  
+        logger.debug("this is debug");  
+       // logger.info("this is info");  
+       // logger.warn("this is warn");  
+        //logger.error("this is error");  
+    }  
+  
+}  
+  
+class ThreadBody implements Runnable  
+{  
+    public ThreadBody() {}  
+  
+      
+    @Override  
+    public void run()  
+    {  
+        // 注意线程独立的Logger实例要在run方法内实现  
+        Logger logger =Logger.getLogger("test");
+          
+        logger.warn(Thread.currentThread().getName() + " started!");  
+          
+        logger.debug("this is debug");  
+        logger.info("this is info");  
+        logger.info("this is info");  
+        logger.info("this is info");  
+        logger.info("this is info");  
+        logger.warn("this is warn");  
+        logger.error("this is error");  
+  
+        logger.warn(Thread.currentThread().getName() + " finished!");  
+    }  
+      
+}  
+ 
